@@ -1,0 +1,11 @@
+public class LList{
+    private Node l;
+    l = null;
+    public void add(String s){
+	l = new Node(s); 
+   }
+    public String toString(){
+	String s= "";
+	Node tmp;
+
+}w
