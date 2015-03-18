@@ -16,4 +16,18 @@ public class LList{
 				s = s + "null";
 				return s;
 		}
+    public Node get(int n){
+	Node tmp= new Node();
+	int i=0;	
+	while(i<n){    
+	    tmp.setnext(l);
+	    tmp=l;
+	    i++;	
+}
+	return tmp;
+    }
+    public void add(int n, String s){
+	Node tmp = new Node(s);
+
+}
 }
