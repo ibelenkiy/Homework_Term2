@@ -1,13 +1,11 @@
 public class myStack<E>{
     // You decide how the node(s) are declared
-    private Node Top = null;
+    private Node Top;
     // make whatever constructor(s) you need
-    public myStack(){
-	Top = null;
-    }
+
     public void push(E data){
         // add something to the top
-	Node<E> n = new Node(data);
+	Node<E> n = new Node<E>(data);
 	n.setNext(Top);
 	Top = n;
     }
@@ -19,8 +17,7 @@ public class myStack<E>{
     }
 
     public boolean empty(){
-	return  Top == null;
-	}
+
     }
 
     public E top() {
