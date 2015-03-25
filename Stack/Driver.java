@@ -1,11 +1,12 @@
 import java.util.*;
 public class Driver{
     public static void main(String args[]){
-	myStack<int> Stack = new myStack;
+	myStack<String> Stack = new myStack<String>();
 	System.out.println(Stack.empty());
-	Stack.push(5);
+	Stack.push("Hey");
 	System.out.println(Stack.top());
-	Stack.push(10);
+	Stack.push("Hello");
+	System.out.println(Stack.empty());
 	System.out.println(Stack.top());
 	Stack.pop();
 	System.out.println(Stack.top());

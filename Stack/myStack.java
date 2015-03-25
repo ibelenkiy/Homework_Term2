@@ -1,6 +1,6 @@
 public class myStack<E>{
     // You decide how the node(s) are declared
-    private Node Top;
+    private Node<E> Top;
     // make whatever constructor(s) you need
 
     public void push(E data){
@@ -12,12 +12,17 @@ public class myStack<E>{
 
     public E pop(){
         // remove and return the top item from the stack
-	Top = Top.getNext();
-	return Top;
+	E tmp = Top.getData();
+	if(empty()){
+	    return null;
+	}else{
+	    Top = Top.getNext();
+	}
+	return tmp;
     }
 
     public boolean empty(){
-
+	return Top == null;
     }
 
     public E top() {
