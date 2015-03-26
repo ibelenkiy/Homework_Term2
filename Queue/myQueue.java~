@@ -5,11 +5,10 @@ public class myQueue<E>{
     // make whatever constructor(s) you need
     public myQueue<E>(){
 	myQueue<E> = new myQueue;
-	Back.setNext(Front);
     }
     public void enqueue(E data){
         // add something to the tail/last
-myQueue<E> tmp = new my
+	Back.setNext(Front);
     }
 
     public E dequeue(){
