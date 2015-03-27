@@ -3,7 +3,10 @@ public class myQueue<E>{
     private Node<E> Back = null;
     private int Length = 0;
     // make whatever constructor(s) you need
-
+    public myQueue(E data){
+	Node<E> tmp = new Node<E>(data);
+	Back.setNext(tmp);
+    }
     
     public void enqueue(E data){
         // add something to the tail/last
