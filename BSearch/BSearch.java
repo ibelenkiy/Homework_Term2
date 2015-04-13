@@ -51,14 +51,27 @@ public class Maze {
 				
 	for (int y=0;y<maxY;y++)
 	    {
-		for (int x=0;x<maxX;x++)
+		for (int x=0;x<maxX;x++){
 		    s = s +board[x][y];
-		s=s+"\n";
+		    s=s+"\n";
+		}
 	    }
 	return s;
     }
     // THE SOLVE
     private myQueue<Integer> Queue;
-    public void solve(int x,int y){
+    public void bfs(int x,int y){
+	Frontier f = new Frontier();
+	f.add(new Node(x,y));
+
+	Node temp = null;
+	int tx = 0,ty = 0;
+	while(f.isEmpty()){
+	    Node current = f.remove();
+	    int cx = current.getX();
+	    int cy = current.getY();
+	    board [cx][cy]= 'I';
+	
+}
     }
 }

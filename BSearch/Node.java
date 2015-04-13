@@ -6,13 +6,17 @@ public class Node<E>{
 	data = s;
 	next = null;
     }
+    public Node(int x, int y){
+	this.x = x;
+	this.y = y;
+    }
     public void  setX(int i){
 	x = i;
     }
     public int getX(){
 	return x;
     }
-    public void  setY(int i){
+    public void setY(int i){
 	y = i;
     }
     public int getY(){
