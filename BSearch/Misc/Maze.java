@@ -73,7 +73,7 @@ public class Maze
 	    return;
 	}
 
-+	if (board[x][y]==exit){
+	if (board[x][y]==exit){
 	    System.out.println(this);
 	    solved = true;
 	}
@@ -103,8 +103,8 @@ public class Maze
     }
 
     public void bfs(int x, int y){
-	//f = new Frontier();
-	f = new StackFront();
+	f = new Frontier();
+	//	f = new StackFront();
 
 	f.add(new Node(x,y));
 
