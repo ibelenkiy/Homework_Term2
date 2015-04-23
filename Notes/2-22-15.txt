@@ -27,3 +27,6 @@ Balance -
 We will be restricting ourselves to a binary tree
 
 Binary Tree- Each node has 0,1 or 2 children.
+
+Binary Search Tree- Binary Tree where given the  value V in any node n, all the values in n's left subtree are less than N. And all the values in n's right subtree are greater than n.
+
