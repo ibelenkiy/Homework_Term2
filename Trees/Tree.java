@@ -5,12 +5,13 @@ public class Tree{
     }
     public void insert(int i){
 	Node Pointer = new Node();
+	Node Pointer1 = new Node();
 	Pointer.setRight(Root); 
 	Node tmp = new Node(i); 
-	if (Node T == null){
+	if (tmp == null){
 	    Root = tmp;
 	    return;   
-	}else{
+	    /*	}else{
 	    while(pointer.getRight() != null){
 		if(tmp.getData() < Pointer.getRight().getData()){
 		    if ( Pointer.getRight().getLeft().getData() == null){
@@ -36,3 +37,4 @@ public class Tree{
     public Node Search(Node t, int i){
     }
 }
+	    */
