@@ -1,0 +1,32 @@
+4-22-15
+-------
+Graph (The base level) - Collection of nodes and edges
+Node - Holds stuff
+Edge - Connects nodes
+Graph Theory - Branch of CS focused on graphs
+Cyclic Graph - Start at node A and can get back to the same node A without retracing our steps.
+Acyclic Graph - Start at a node A but cannot get back to A without retracing steps.
+Weights (On Graph) - Value associated with the edge. (ex. AB valued 6, BC valued 4) Good to look at costs.
+Directed Graph - Cant always get to or from a particular node. (Nodes point to specific nodes but edges can point in both directions)
+DAG (Directed Acyclic Graph) - Directed graph with no cycles.
+**Trees**
+Trees (Purpose)- Graphs that are restricted so that they are more managable
+Trees - Empty or acyclic graph with one node designated as the root.
+Child Node - Connected to and 1 level down from its parent node
+Parent Node - (Defined in child)
+Leaf - Node with no children
+Path - The sequence of nodes or edges that connect two nodes
+Ancestors - Any nodes oon the path from you to the node.
+Descendants - (Defined in ancestors)
+Siblings - 
+//Atributes 
+Height - Length of the longest root to leaf path
+Fullness - A "full" tree has the  maximum number of nodes
+Balance - 
+
+We will be restricting ourselves to a binary tree
+
+Binary Tree- Each node has 0,1 or 2 children.
+
+Binary Search Tree- Binary Tree where given the  value V in any node n, all the values in n's left subtree are less than N. And all the values in n's right subtree are greater than n.
+
